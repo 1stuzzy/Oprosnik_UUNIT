@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрос</title>
+    <link rel="stylesheet" href="./frontend/styles.css">
+</head>
+<body>
+<button id="openDialogButton" class="open-dialog-button">Пройти опрос</button>
+<div class="container">
+    <div id="surveyDialog" class="dialog">
+        <h2>Добро пожаловать!</h2>
+        <p>По результатам опроса, мы определим вашу специальность, на которую Вы можете поступить в нашем колледже.</p>
+        <button id="startSurvey">Приступить к опросу</button>
+    </div>
+    <div id="questionContainer" class="dialog">
+        <h2>Опрос</h2>
+        <p id="questionText"></p>
+        <div id="options"></div>
+        <p id="questionCount"></p>
+        <button id="completeSurvey" style="display: none;">Завершить опрос</button>
+    </div>
+    <div id="applicationForm" class="dialog">
+        <h2 id="applicationHeader">Оставьте свою заявку</h2>
+        <form id="contactForm">
+            <label for="nameInput">Имя:</label>
+            <input type="text" id="nameInput" placeholder="Введите ваше имя" required>
+            <br>
+            <label for="phoneInput">Номер телефона:</label>
+            <input type="tel" id="phoneInput" placeholder="Введите номер телефона" required>
+            <br>
+            <button type="submit">Отправить</button>
+        </form>
+        <p id="successMessage" style="display: none; font-weight: bold;">Заявка успешно отправлена!
+            <button id="closeSuccessMessage">Закрыть</button>
+        </p>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="./backend/script.js"></script>
+<script src="./backend/questions.js"></script>
+<script src="./backend/specialties.js"></script>
+<script src="./backend/googleapi.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "port": 3000,
+  "googleSheets": {
+    "credentialsPath": "../config/credentials.json",
+    "spreadsheetId": "1pQ6OYo9FxZmOpaO41NbaaDuWbCrpFNy72VkBA4I1RT4"
+  }
+}
